@@ -1,15 +1,8 @@
 # Smart Cane — AfroIoT
 
-
-
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-
-
-
 ![License](https://img.shields.io/badge/license-MIT-blue)
-
-
 
 ## Overview
 An assistive smart cane for visually impaired users that detects nearby obstacles and alerts them through sound and vibration.
@@ -44,3 +37,15 @@ Tested and validated: with the obstacle set at 34 cm, the alert pulses noticeabl
 1. Clone the repo
    ```bash
    git clone https://github.com/Roland13-ai/smart-cane-afroiot.git
+2. Flash the code — open smart_cane.ino in Arduino IDE and upload
+3. Wire it up — connect the HC-SR04, buzzer, and vibration motor per the pin definitions in the code (trig = pin 9, echo = pin 10, buzzer = pin 11, vibration = pin 12)
+Status
+[x] Core detection and alert logic written
+
+[x] Logic validated in simulation (Wokwi)
+
+[ ] Physical prototype (cane housing + component mounting)
+
+[ ] Field testing with end users
+
+[ ] Timeout safeguard on pulseIn() to prevent blocking on sensor read failure
